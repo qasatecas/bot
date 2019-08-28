@@ -1,1 +1,1 @@
-worker: python pizzabot.py
+worker: python bot.py
