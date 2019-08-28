@@ -39,7 +39,7 @@ async def on_raw_reaction_add(payload):
     print(mesid)
     emoji = payload.emoji
     if mesid == 616312267067228195:
-        if str(emoji) == '<:Villager_SSB4:492779328799768587>':
+        if str(emoji) == "<:Villager_SSB4:492779328799768587>":
             await user.add_roles(guild.get_role(616232176035299345))
         elif str(emoji) == "<:csemoji:616253242350764042>":
             await user.add_roles(guild.get_role(616240053634727967))
@@ -64,7 +64,7 @@ async def on_raw_reaction_remove(payload):
     
     emoji = payload.emoji
     if mesid == 616312267067228195:
-        if str(emoji) == '<:Villager_SSB4:492779328799768587>':
+        if str(emoji) == "<:Villager_SSB4:492779328799768587>":
             await user.remove_roles(guild.get_role(616232176035299345))
         elif str(emoji) == "<:csemoji:616253242350764042>":
             await user.remove_roles(guild.get_role(616240053634727967))
